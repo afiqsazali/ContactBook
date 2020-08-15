@@ -1,9 +1,7 @@
 public class Node {
-
-		ContactInfo contactInfo;
-
-{
-		contactInfo = new ContactInfo();
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
-
-}
+sasasasassasassasasasasa
