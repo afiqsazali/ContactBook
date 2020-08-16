@@ -4,4 +4,3 @@ public class Node {
         return super.toString();
     }
 }
-bodo
