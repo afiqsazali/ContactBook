@@ -1,5 +1,11 @@
 public class Node {
-test ady nmpk ke x?
-    test new commit
-    oraoroaroaoroaroaoroaoroaoraoraoraoroa
+
+		Contact data;
+		Node next;
+
+		public Node(Contact data) {
+				this.data = data;
+				this.next = null;
+		}
+
 }
