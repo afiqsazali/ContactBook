@@ -34,6 +34,4 @@ public class LinkedList {
 	            this.tail = null;
 		}
 
-
-
 }
