@@ -1,11 +1,12 @@
 public class Node {
 
-		Contact data;
+		Contact contact;
 		Node next;
 
-		public Node(Contact data) {
-				this.data = data;
+		public Node(Contact contact) {
+				this.contact = contact;
 				this.next = null;
 		}
 
 }
+
