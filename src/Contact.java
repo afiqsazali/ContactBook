@@ -3,7 +3,7 @@ public class Contact {
 		String name = "";
 		String email = "";
 		String phoneNum = "";
-		String PosMail = "";
+		String posMail = "";
 
 		public void setName(String name) {
 
@@ -43,13 +43,13 @@ public class Contact {
 
 		public void setPosMail(String PosMail) {
 
-				this.PosMail = PosMail;
+				this.posMail = PosMail;
 
 		}
 
 		public String getPosMail() {
 
-				return PosMail;
+				return posMail;
 
 		}
 
