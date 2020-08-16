@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ContactBook {
 
-		LinkedList contactlist = new LinkedList();
+		LinkedList contactList = new LinkedList();
 
 		Scanner input = new Scanner(System.in);
 
@@ -24,7 +24,7 @@ public class ContactBook {
 	        String PosMail = input.nextLine();
 	        person.setPosMail(PosMail);
 
-	        contactlist.insert(person);
+	        contactList.insert(person);
 		}
 
 //		public boolean search(String name) {
