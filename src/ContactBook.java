@@ -63,6 +63,9 @@ public class ContactBook {
 				} catch( NullPointerException e){
 					System.out.println(e);
 				}
+				finally{
+					System.out.println("There is no such name in contact book");
+				}
 
 		}
 
