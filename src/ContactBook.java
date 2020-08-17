@@ -64,6 +64,7 @@ public class ContactBook {
 //		public void edit(String name) {
 //				LinkedList current = new LinkedList();
 //				current
+	TESTESTTEST
 //		}
 //
 //		public void remove(Contact contact) {
