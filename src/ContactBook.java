@@ -36,7 +36,7 @@ public class ContactBook {
 
 				current = contactList.head;
 
-				String newName = input.nextLine();
+				String newName = input.next();
 				String name = newName;
 
 				if (contactList.head == null) {
@@ -48,12 +48,12 @@ public class ContactBook {
 						current=current.next;
 				}
 
-						if (name.equals(current.contact.name)) {
-								System.out.println("Name "+ current.contact.name +" recorded inside contact list");
-								System.out.println("email "+ current.contact.email +" recorded inside contact list");
-								System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
-								System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
-						}
+				if (name.equals(current.contact.name)) {
+						System.out.println("Name "+ current.contact.name +" recorded inside contact list");
+						System.out.println("Email "+ current.contact.email +" recorded inside contact list");
+						System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
+						System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
+				}
 
 				else {
 						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
@@ -94,7 +94,7 @@ public class ContactBook {
 				else {
 						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
 				}
-				
+
 		}
 
 
