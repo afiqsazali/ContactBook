@@ -10,19 +10,19 @@ public class ContactBook {
 		public void add() {
 
 				Contact person = new Contact();
-				System.out.print("Enter name: ");
+				System.out.print("Please enter a name to be searched: ");
 				String Name = input.nextLine();
 				person.setName(Name);
 
-				System.out.print("\nEnter email: ");
+				System.out.print("\nPlease enter an email to be searched: ");
 				String email = input.nextLine();
 				person.setEmail(email);
 
-				System.out.print("\nEnter phone number: ");
+				System.out.print("\nPlease enter a phone number to be searched: ");
 				String phoneNum = input.nextLine();
 				person.setphoneNum(phoneNum);
 
-				System.out.print("\nEnter Posmail: ");
+				System.out.print("\nPlease enter a post code to be searched: ");
 				String PosMail = input.nextLine();
 				person.setPosMail(PosMail);
 
@@ -33,7 +33,7 @@ public class ContactBook {
 		public void search() {
 
 				Node current;
-				System.out.print("Enter a name for search contact : ");
+				System.out.print("Please enter a name to be searched in the contact book: ");
 
 				current = contactList.head;
 
@@ -41,7 +41,7 @@ public class ContactBook {
 				String name = newName;
 
 				if (contactList.head == null) {
-						System.out.println("No record inside contact list");
+						System.out.println("Error, no contact found.");
 						return;
 				}
 
@@ -51,14 +51,14 @@ public class ContactBook {
 
 				try {
 				if (name.equals(current.contact.name)) {
-					System.out.println("Name "+ current.contact.name +" recorded inside contact list");
-					System.out.println("Email "+ current.contact.email +" recorded inside contact list");
-					System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
-					System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
+					System.out.println("Name '"+ current.contact.name +"' is inside contact list");
+					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
+					System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
+					System.out.println("Post Mail '"+ current.contact.posMail +"' is inside contact list");
 				}
 
 				else {
-					System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
+					System.out.println("Error, name '"+ current.contact.name +"' is not inside contact list");
 				}
 				} catch( NullPointerException e){
 					System.out.println(e);
@@ -69,14 +69,14 @@ public class ContactBook {
 		public void remove() {
 
 				Node current;
-				System.out.println("Enter a name to be removed: ");
+				System.out.println("Please enter a name to be removed: ");
 
 				current = contactList.head;
 
 				String name = input.nextLine();
 
 				if (contactList.head == null) {
-						System.out.println("No record inside contact list");
+						System.out.println("Error, no contact found.");
 						return;
 				}
 
@@ -85,13 +85,12 @@ public class ContactBook {
 				}
 
 				contactList.remove(current.contact);
-
 		}
 
 		public void edit() {
 
 				Node current;
-				System.out.println("Enter a name for search contact");
+				System.out.println("Please enter a name to be edited.");
 
 				current = contactList.head;
 
@@ -99,7 +98,7 @@ public class ContactBook {
 				String name = newName;
 
 				if (contactList.head == null) {
-						System.out.println("No record inside contact list");
+						System.out.println("Error, no contact found.");
 						return;
 				}
 
@@ -108,14 +107,14 @@ public class ContactBook {
 				}
 
 				if (name.equals(current.contact.name)) {
-						System.out.println("Name "+ current.contact.name +" recorded inside contact list");
-						System.out.println("Email "+ current.contact.email +" recorded inside contact list");
-						System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
-						System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
+						System.out.println("Name '"+ current.contact.name +"' is inside contact list");
+						System.out.println("Email '"+ current.contact.email +"' is inside contact list");
+						System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
+						System.out.println("Post Mail '"+ current.contact.posMail +"' is inside contact list");
 				}
 
 				else {
-						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
+						System.out.println("Error, name '"+ current.contact.name +"' is not inside contact list");
 				}
 
 		}
