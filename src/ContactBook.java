@@ -45,10 +45,11 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && name.equals(current.contact.name)) {
+				while(current!=null && !name.equals(current.contact.name)) {
 						current=current.next;
 				}
 
+				try {
 				if (name.equals(current.contact.name)) {
 					System.out.println("\nName '"+ current.contact.name +"' is inside contact list");
 					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
@@ -59,6 +60,13 @@ public class ContactBook {
 				else {
 					System.out.println("Error, name '"+ newName +"' is not inside contact list");
 				}
+				} catch( NullPointerException e){
+					System.out.println("");
+				}
+				finally{
+					System.out.println(" ");
+				}
+
 		}
 
 		public void remove() {
@@ -97,10 +105,11 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && name.equals(current.contact.name)) {
+				while(current!=null && !name.equals(current.contact.name)) {
 						current=current.next;
 				}
 
+			try {
 				if (name.equals(current.contact.name)) {
 					System.out.println("Name '"+ current.contact.name +"' is inside contact list");
 					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
@@ -111,6 +120,12 @@ public class ContactBook {
 				else {
 					System.out.println("Error, name '"+ newName +"' is not inside contact list");
 				}
+			} catch( NullPointerException e){
+				System.out.println("");
+			}
+			finally{
+				System.out.println("");
+			}
 
 		}
 
