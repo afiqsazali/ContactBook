@@ -5,8 +5,8 @@ public class Main {
         ContactBook contactList1 = new ContactBook();
 
         contactList1.add();
-        contactList1.edit();
         contactList1.search();
+        contactList1.edit();
         contactList1.remove();
 
     }
