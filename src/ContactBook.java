@@ -7,24 +7,26 @@ public class ContactBook {
 		Scanner input = new Scanner(System.in);
 
 		public void add() {
-			Contact person = new Contact();
-	        System.out.print("Enter name: ");
-	        String Name = input.nextLine();
-	        person.setName(Name);
 
-	        System.out.print("\nEnter email: ");
-	        String email = input.nextLine();
-	        person.setEmail(email);
+				Contact person = new Contact();
+				System.out.print("Enter name: ");
+				String Name = input.nextLine();
+				person.setName(Name);
 
-	        System.out.print("\nEnter phone number: ");
-	        String phoneNum = input.nextLine();
-	        person.setphoneNum(email);
+				System.out.print("\nEnter email: ");
+				String email = input.nextLine();
+				person.setEmail(email);
 
-	        System.out.print("\nEnter Posmail: ");
-	        String PosMail = input.nextLine();
-	        person.setPosMail(PosMail);
+				System.out.print("\nEnter phone number: ");
+				String phoneNum = input.nextLine();
+				person.setphoneNum(phoneNum);
 
-	        contactList.insert(person);
+				System.out.print("\nEnter Posmail: ");
+				String PosMail = input.nextLine();
+				person.setPosMail(PosMail);
+
+				contactList.insert(person);
+
 		}
 
 		public void search() {
@@ -56,7 +58,6 @@ public class ContactBook {
 				else {
 						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
 				}
-
 
 		}
 
