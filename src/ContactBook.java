@@ -29,25 +29,19 @@ public class ContactBook {
 
 	public void search() {
 
+		System.out.println("Enter a name for search contact");
+		String newName = input.next();
 		if (contactList.insert(person) == 0) {
 			System.out.println("No record inside contact list");
 			return;
 		}
-
-		//			System.out.println("Name in contact list");
-		//			for (contactList look: this.contactList){
-		//				System.out.println(look.getName());
-		//				for (int i = look.getName().length();i<999;i++){
-		//					System.out.println(" ");
-		//				}
-		//			}
-		System.out.println("Enter a name for search contact");
-		String newName = input.next();
-		if (String name == newName()){
+		else if (String name == newName()){
 			System.out.println(contactList.insert(person));
+			return;
 		}
 		else if (String name != newName){
 			System.out.println("No name recorded in contact");
+			return;
 		}
 	}
 }
