@@ -30,7 +30,7 @@ public class ContactBook {
 		public void search() {
 
 				Node current;
-				System.out.println("Enter a name for search contact");
+				System.out.print("Enter a name for search contact : ");
 
 				current = contactList.head;
 
@@ -38,7 +38,7 @@ public class ContactBook {
 				String name = newName;
 
 				if (contactList.head == null) {
-						System.out.println("No record inside contact list");
+						System.out.print("No record inside contact list");
 						return;
 				}
 
@@ -47,13 +47,12 @@ public class ContactBook {
 				}
 
 				if (name.equals(current.contact.name)) {
-						System.out.println("Name "+ current.contact.name +" recorded inside contact list");
+						System.out.println("Name " + current.contact.name + " recorded inside contact list");
 				}
 
 				else {
-						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
+						System.out.println("Name " + current.contact.name + " not recorded inside contact list");
 				}
-
 
 		}
 
