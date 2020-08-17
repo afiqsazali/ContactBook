@@ -10,19 +10,19 @@ public class ContactBook {
 		public void add() {
 
 				Contact person = new Contact();
-				System.out.print("Please enter a name to be searched: ");
+				System.out.print("Please enter a name to be added: ");
 				String Name = input.nextLine();
 				person.setName(Name);
 
-				System.out.print("\nPlease enter an email to be searched: ");
+				System.out.print("\nPlease enter an email to be added: ");
 				String email = input.nextLine();
 				person.setEmail(email);
 
-				System.out.print("\nPlease enter a phone number to be searched: ");
+				System.out.print("\nPlease enter a phone number to be added: ");
 				String phoneNum = input.nextLine();
 				person.setphoneNum(phoneNum);
 
-				System.out.print("\nPlease enter a post code to be searched: ");
+				System.out.print("\nPlease enter a post code to be added: ");
 				String PosMail = input.nextLine();
 				person.setPosMail(PosMail);
 
