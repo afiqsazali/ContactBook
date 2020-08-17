@@ -45,7 +45,7 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && !name.equals(current.contact.name)) {
+				while(current!=null && name.equals(current.contact.name)) {
 						current=current.next;
 				}
 
@@ -64,7 +64,7 @@ public class ContactBook {
 					System.out.println("");
 				}
 				finally{
-					System.out.println("Error, name '"+ newName +"' is not inside contact list");
+					System.out.println(" ");
 				}
 
 		}
@@ -83,7 +83,7 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && !name.equals(current.contact.name)) {
+				while(current!=null && name.equals(current.contact.name)) {
 						current=current.next;
 				}
 
@@ -105,7 +105,7 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && !name.equals(current.contact.name)) {
+				while(current!=null && name.equals(current.contact.name)) {
 						current=current.next;
 				}
 
@@ -124,7 +124,7 @@ public class ContactBook {
 				System.out.println("");
 			}
 			finally{
-				System.out.println("Error, name '"+ newName +"' is not inside contact list");
+				System.out.println("");
 			}
 
 		}
