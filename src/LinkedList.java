@@ -33,6 +33,7 @@ public class LinkedList {
 
 	        if (this.head == null)
 	            this.tail = null;
+
 		}
 
 }
