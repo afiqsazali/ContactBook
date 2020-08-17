@@ -93,7 +93,7 @@ public class ContactBook {
 		public void edit() {
 
 				Node current;
-				System.out.println("\nPlease enter a name to be edited.");
+				System.out.print("\nPlease enter a name to be edited: ");
 
 				current = contactList.head;
 
