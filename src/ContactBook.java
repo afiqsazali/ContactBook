@@ -50,7 +50,7 @@ public class ContactBook {
 
 				if (name.equals(current.contact.name)) {
 						System.out.println("Name "+ current.contact.name +" recorded inside contact list");
-						System.out.println("email "+ current.contact.email +" recorded inside contact list");
+						System.out.println("Email "+ current.contact.email +" recorded inside contact list");
 						System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
 						System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
 				}
