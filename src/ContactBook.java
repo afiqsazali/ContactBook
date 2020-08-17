@@ -48,6 +48,9 @@ public class ContactBook {
 
 				if (name.equals(current.contact.name)) {
 						System.out.println("Name "+ current.contact.name +" recorded inside contact list");
+						System.out.println("Name "+ current.contact.email +" recorded inside contact list");
+						System.out.println("Name "+ current.contact.phoneNum +" recorded inside contact list");
+						System.out.println("Name "+ current.contact.posMail +" recorded inside contact list");
 				}
 
 				else {
