@@ -36,7 +36,8 @@ public class LinkedList {
 						temp = temp.next;
 				}
 
-				if (temp == null) return;
+				if (temp == null)
+						return;
 
 				prev.next = temp.next;
 
