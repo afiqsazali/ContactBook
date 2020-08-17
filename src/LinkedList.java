@@ -4,35 +4,41 @@ public class LinkedList {
 		Node tail;
 
 		public LinkedList() {
-			this.head = null;
-			this.tail = null;
+				this.head = null;
+				this.tail = null;
 		}
 
 		void insert(Contact contact) {
 
-			Node current = new Node(contact);
+				Node current = new Node(contact);
 
-	        if (this.tail == null) {
-	            this.head = this.tail = current;
-	            return;
-	        }
+				if (this.tail == null) {
+						this.head = this.tail = current;
+						return;
+				}
 
-	        this.tail.next = current;
-	        this.tail = current;
+				this.tail.next = current;
+				this.tail = current;
 
 		}
 
-		void remove() {
+		void remove(Contact contact) {
 
-	        if (this.head == null) {
-	            System.out.println("The list is empty");
-	            return; }
+				Node temp = head, prev = null;
 
-	        Node current = this.head;
-	        this.head = this.head.next;
+				if (temp != null && temp.contact == contact) {
+						head = temp.next;
+						return;
+				}
 
-	        if (this.head == null)
-	            this.tail = null;
+				while (temp != null) {
+						prev = temp;
+						temp = temp.next;
+				}
+
+				if (temp == null) return;
+
+				prev.next = temp.next;
 
 		}
 
