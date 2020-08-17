@@ -1,3 +1,4 @@
+import javax.xml.bind.SchemaOutputResolver;
 import java.util.Scanner;
 
 public class ContactBook {
@@ -48,15 +49,19 @@ public class ContactBook {
 						current=current.next;
 				}
 
+				try {
 				if (name.equals(current.contact.name)) {
-						System.out.println("Name "+ current.contact.name +" recorded inside contact list");
-						System.out.println("Email "+ current.contact.email +" recorded inside contact list");
-						System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
-						System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
+					System.out.println("Name "+ current.contact.name +" recorded inside contact list");
+					System.out.println("Email "+ current.contact.email +" recorded inside contact list");
+					System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
+					System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
 				}
 
 				else {
-						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
+					System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
+				}
+				} catch( NullPointerException e){
+					System.out.println(e);
 				}
 
 		}
