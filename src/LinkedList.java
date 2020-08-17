@@ -23,6 +23,7 @@ public class LinkedList {
 		}
 
 		void remove() {
+
 	        if (this.head == null) {
 	            System.out.println("The list is empty");
 	            return; }
