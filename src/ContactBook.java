@@ -31,7 +31,7 @@ public class ContactBook {
 
 		System.out.println("Enter a name for search contact");
 		String newName = input.next();
-		if (contactList.insert(person) == 0) {
+		if (contactList.person == 0) {
 			System.out.println("No record inside contact list");
 			return;
 		}
