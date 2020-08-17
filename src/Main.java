@@ -7,7 +7,7 @@ public class Main {
         contactList1.add();
 //        contactList1.add();
 //        contactList1.edit("Example name");
-//        contactList1.search("Example name");
+        contactList1.search();
 //        contactList1.remove(person1);
 
     }
