@@ -33,7 +33,7 @@ public class ContactBook {
 		public void search() {
 
 				Node current;
-				System.out.print("Please enter a name to be searched in the contact book: ");
+				System.out.print("\nPlease enter a name to be searched in the contact book: ");
 
 				current = contactList.head;
 
@@ -51,7 +51,7 @@ public class ContactBook {
 
 				try {
 				if (name.equals(current.contact.name)) {
-					System.out.println("Name '"+ current.contact.name +"' is inside contact list");
+					System.out.println("\nName '"+ current.contact.name +"' is inside contact list");
 					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
 					System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
 					System.out.println("Post Mail '"+ current.contact.posMail +"' is inside contact list");
