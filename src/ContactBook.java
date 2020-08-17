@@ -36,7 +36,43 @@ public class ContactBook {
 
 				current = contactList.head;
 
-				String newName = input.next();
+				String newName = input.nextLine();
+				String name = newName;
+
+				if (contactList.head == null) {
+						System.out.println("No record inside contact list");
+						return;
+				}
+
+				while(current!=null && !name.equals(current.contact.name)) {
+						current=current.next;
+				}
+
+						if (name.equals(current.contact.name)) {
+								System.out.println("Name "+ current.contact.name +" recorded inside contact list");
+								System.out.println("email "+ current.contact.email +" recorded inside contact list");
+								System.out.println("Phone Number "+ current.contact.phoneNum +" recorded inside contact list");
+								System.out.println("Post Mail "+ current.contact.posMail +" recorded inside contact list");
+						}
+
+				else {
+						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
+				}
+
+		}
+
+		public void remove() {
+
+		}
+
+		public void edit() {
+
+				Node current;
+				System.out.println("Enter a name for search contact");
+
+				current = contactList.head;
+
+				String newName = input.nextLine();
 				String name = newName;
 
 				if (contactList.head == null) {
@@ -58,16 +94,9 @@ public class ContactBook {
 				else {
 						System.out.println("Name "+ current.contact.name +" not recorded inside contact list");
 				}
-
+				
 		}
 
-//		public void edit(String name) {
-//				LinkedList current = new LinkedList();
-//				current
-//		}
-//
-//		public void remove(Contact contact) {
-//
-//		}
+
 
 }
