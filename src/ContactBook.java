@@ -6,7 +6,7 @@ public class ContactBook {
 
 		Scanner input = new Scanner(System.in);
 
-		public String add() {
+		public void add() {
 			Contact person = new Contact();
 			System.out.print("Enter name: ");
 			String Name = input.nextLine();
@@ -50,6 +50,7 @@ public class ContactBook {
 				System.out.println("No name recorded in contact");
 			}
 		}
+
 
 //
 //		public void edit(String name) {
