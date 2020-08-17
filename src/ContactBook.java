@@ -31,12 +31,13 @@ public class ContactBook {
 
 		System.out.println("Enter a name for search contact");
 		String newName = input.next();
+		String name = newName;
 		if (contactList.person == 0) {
 			System.out.println("No record inside contact list");
 			return;
 		}
 		else if (String name == newName()){
-			System.out.println(contactList.insert(person));
+			System.out.println(contactList.person);
 			return;
 		}
 		else if (String name != newName){
