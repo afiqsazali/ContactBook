@@ -32,11 +32,11 @@ public class ContactBook {
 		public void search() {
 
 				Node current;
-				System.out.println("Enter a name for search contact");
+				System.out.print("Enter a name for search contact : ");
 
 				current = contactList.head;
 
-				String newName = input.next();
+				String newName = input.nextLine();
 				String name = newName;
 
 				if (contactList.head == null) {
@@ -62,6 +62,24 @@ public class ContactBook {
 		}
 
 		public void remove() {
+
+				Node current;
+				System.out.println("Enter a name to be removed: ");
+
+				current = contactList.head;
+
+				String name = input.nextLine();
+
+				if (contactList.head == null) {
+						System.out.println("No record inside contact list");
+						return;
+				}
+
+				while(current!=null && !name.equals(current.contact.name)) {
+						current=current.next;
+				}
+
+				contactList.remove(current.contact);
 
 		}
 
