@@ -1,6 +1,8 @@
 import javax.xml.bind.SchemaOutputResolver;
 import java.util.Scanner;
 
+
+
 public class ContactBook {
 
 		LinkedList contactList = new LinkedList();
@@ -126,6 +128,10 @@ public class ContactBook {
 				finally{
 				System.out.println("");
 				}
+
+		}
+
+		public void printall(){
 
 		}
 

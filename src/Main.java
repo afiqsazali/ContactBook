@@ -12,7 +12,8 @@ public class Main {
             System.out.println("2= search");
             System.out.println("3= edit");
             System.out.println("4= remove");
-            System.out.println("5= exit");
+            System.out.println("5= printall");
+            System.out.println("6= exit");
             System.out.println("Test jorr");
             int choice = scan.nextInt();
 
@@ -25,7 +26,9 @@ public class Main {
                     break;
                 case 4: contactList1.remove();
                     break;
-                case 5: System.out.println("adios");
+                case 5: contactList1.printall();
+                    break;
+                case 6: System.out.println("adios");
                     System.exit(0);
             }
         }
