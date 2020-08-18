@@ -136,12 +136,17 @@ public class ContactBook {
 
 			Node current;
 			current = contactList.head;
+			String print = null;
+			String name = print;
+			if (contactList.head == null) {
+				System.out.println("Error, no contact found.");
+				return;
+			}
+			while(current.next!=null && !print.equals(current.contact.name)) {
+				current=current.next;
+			}
 			if (name.equals(current.contact.name)==true) {
-			System.out.println("Name '"+ current.contact.name +"' is inside contact list");
-			System.out.println("Email '"+ current.contact.email +"' is inside contact list");
-			System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
-			System.out.println("Post Mail '"+ current.contact.posMail +"' is inside contact list");
-
+				System.out.println(print);
+			}
 		}
-
 }

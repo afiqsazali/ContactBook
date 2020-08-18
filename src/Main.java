@@ -12,7 +12,8 @@ public class Main {
             System.out.println("Press '2' to search contact");
             System.out.println("Press '3' to edit contact");
             System.out.println("Press '4' to remove contact");
-            System.out.println("Press '5' to exit");
+            System.out.println("Press '5' to print all contact");
+            System.out.println("Press '6' to exit");
             System.out.println("Test jorr");
             int choice = scan.nextInt();
 
@@ -27,7 +28,7 @@ public class Main {
                     break;
                 case 5: contactList1.printall();
                     break;
-                case 6: System.out.println("adios");
+                case 6: System.out.println("Thank you and Goodbye");
                     System.exit(0);
             }
         }
