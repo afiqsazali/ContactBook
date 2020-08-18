@@ -45,12 +45,12 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && !name.equals(current.contact.name)) {
+				while(current.next!=null && !name.equals(current.contact.name)) {
 						current=current.next;
 				}
 
 				try {
-				if (name.equals(current.contact.name)) {
+					if (name.equals(current.contact.name)==true) {
 					System.out.println("\nName '"+ current.contact.name +"' is inside contact list");
 					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
 					System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
@@ -105,12 +105,12 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && !name.equals(current.contact.name)) {
-						current=current.next;
+				while(current.next!=null && !name.equals(current.contact.name)) {
+				current=current.next;
 				}
 
-			try {
-				if (name.equals(current.contact.name)) {
+				try {
+				if (name.equals(current.contact.name)==true) {
 					System.out.println("Name '"+ current.contact.name +"' is inside contact list");
 					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
 					System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
@@ -120,12 +120,12 @@ public class ContactBook {
 				else {
 					System.out.println("Error, name '"+ newName +"' is not inside contact list");
 				}
-			} catch( NullPointerException e){
+				} catch( NullPointerException e){
+					System.out.println("");
+				}
+				finally{
 				System.out.println("");
-			}
-			finally{
-				System.out.println("");
-			}
+				}
 
 		}
 
