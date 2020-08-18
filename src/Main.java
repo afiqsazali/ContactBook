@@ -25,7 +25,9 @@ public class Main {
                     break;
                 case 4: contactList1.remove();
                     break;
-                case 5: System.out.println("adios");
+                case 5: contactList1.printall();
+                    break;
+                case 6: System.out.println("adios");
                     System.exit(0);
             }
         }

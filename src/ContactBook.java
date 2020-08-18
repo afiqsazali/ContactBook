@@ -90,7 +90,7 @@ public class ContactBook {
 				}
 
 				contactList.remove(current.contact);
-				System.out.println("Contact book "+ name +" done remove ");
+				System.out.println("Contact '"+ name +"' has been removed successfully. ");
 		}
 
 		public void edit() {
@@ -133,6 +133,14 @@ public class ContactBook {
 		}
 
 		public void printall(){
+
+			Node current;
+			current = contactList.head;
+			if (name.equals(current.contact.name)==true) {
+			System.out.println("Name '"+ current.contact.name +"' is inside contact list");
+			System.out.println("Email '"+ current.contact.email +"' is inside contact list");
+			System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
+			System.out.println("Post Mail '"+ current.contact.posMail +"' is inside contact list");
 
 		}
 
