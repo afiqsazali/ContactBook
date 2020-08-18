@@ -10,6 +10,8 @@ public class Main {
         while(true){
             System.out.println("1 = add");
             System.out.println("2= search");
+            System.out.println("3= edit");
+            System.out.println("4= remove");
             System.out.println("Test jorr");
             int choice = scan.nextInt();
 
