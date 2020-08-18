@@ -12,6 +12,7 @@ public class Main {
             System.out.println("2= search");
             System.out.println("3= edit");
             System.out.println("4= remove");
+            System.out.println("5= exit");
             System.out.println("Test jorr");
             int choice = scan.nextInt();
 
