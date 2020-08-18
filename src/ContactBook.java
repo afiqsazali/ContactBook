@@ -85,11 +85,12 @@ public class ContactBook {
 						return;
 				}
 
-				while(current!=null && name.equals(current.contact.name)) {
-						current=current.next;
+				while(current.next!=null && !name.equals(current.contact.name)) {
+					current=current.next;
 				}
 
 				contactList.remove(current.contact);
+				System.out.println("Contact book "+ name +" done remove ");
 		}
 
 		public void edit() {
