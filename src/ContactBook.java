@@ -140,9 +140,10 @@ public class ContactBook {
 				System.out.println("Error, no contact found.");
 				return;
 			}
-			while(current.next!=null) {
+			while(current.next!=null && !equals(current.contact.name)) {
 				current=current.next;
-				System.out.println(contactList.head);
 			}
+				System.out.println(current.contact.name);
+
 		}
 }
