@@ -14,7 +14,7 @@ public class Main {
             System.out.println("Press '4' to remove contact");
             System.out.println("Press '5' to print all contact");
             System.out.println("Press '6' to exit");
-            System.out.println("Test jorr");
+            System.out.print("Enter a number: ");
             int choice = scan.nextInt();
 
             switch(choice){

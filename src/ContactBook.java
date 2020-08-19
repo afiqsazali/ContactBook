@@ -30,6 +30,8 @@ public class ContactBook {
 
 				contactList.insert(person);
 
+				System.out.println("Contact " + Name + " Added succesfully!");
+
 		}
 
 		public void search() {
@@ -52,11 +54,11 @@ public class ContactBook {
 				}
 
 				try {
-					if (name.equals(current.contact.name)==true) {
+					if (name.equals(current.contact.name)) {
 					System.out.println("\nName '"+ current.contact.name +"' is inside contact list");
-					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
-					System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
-					System.out.println("Post Mail '"+ current.contact.posMail +"' is inside contact list");
+					System.out.println("Email: "+ current.contact.email);
+					System.out.println("Phone Number: "+ current.contact.phoneNum);
+					System.out.println("Post Mail: "+ current.contact.posMail);
 				}
 
 				else {
@@ -112,22 +114,27 @@ public class ContactBook {
 				current=current.next;
 				}
 
-				try {
-				if (name.equals(current.contact.name)==true) {
-					System.out.println("Name '"+ current.contact.name +"' is inside contact list");
-					System.out.println("Email '"+ current.contact.email +"' is inside contact list");
-					System.out.println("Phone Number '"+ current.contact.phoneNum +"' is inside contact list");
-					System.out.println("Post Mail '"+ current.contact.posMail +"' is inside contact list");
-				}
+				System.out.print("what would you like to edit?\n(1)-Name \n(2)-Email \n(3)-Phone Number \n(4)-Postal Address \nEnter a number: ");
+				Scanner opt = new Scanner(System.in);
+				int option = opt.nextInt();
 
-				else {
-					System.out.println("Error, name '"+ newName +"' is not inside contact list");
-				}
-				} catch( NullPointerException e){
-					System.out.println("");
-				}
-				finally{
-				System.out.println("");
+				switch (option) {
+						case 1:
+								System.out.print("Enter new name: ");
+								current.contact.setName(input.nextLine());
+								break;
+						case 2:
+								System.out.print("Enter new email: ");
+								current.contact.setEmail(input.nextLine());
+								break;
+						case 3:
+								System.out.print("Enter new phone number: ");
+								current.contact.setphoneNum(input.nextLine());
+								break;
+						case 4:
+								System.out.print("Enter new Postal Address: ");
+								current.contact.setphoneNum(input.nextLine());
+								break;
 				}
 
 		}
