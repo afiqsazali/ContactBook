@@ -1,8 +1,6 @@
 import javax.xml.bind.SchemaOutputResolver;
 import java.util.Scanner;
 
-
-
 public class ContactBook {
 
 		LinkedList contactList = new LinkedList();
@@ -139,7 +137,7 @@ public class ContactBook {
 
 		}
 
-		public void printall(){
+	/*	public void printall(){
 
 			Node current;
 			current = contactList.head;
@@ -147,10 +145,9 @@ public class ContactBook {
 				System.out.println("Error, no contact found.");
 				return;
 			}
-			while(current.next!=null && !equals(current.contact.name)) {
+			while(current.next!=null && equals(current.contact.name)==false) {
 				current=current.next;
 			}
-				System.out.println(current.contact.name);
-
-		}
+			System.out.println(contactList.toString());
+		}*/
 }

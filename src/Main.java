@@ -6,6 +6,7 @@ public class Main {
 
         ContactBook contactList1 = new ContactBook();
         Scanner scan = new Scanner(System.in);
+        System.out.println("CONTACT BOOK");
 
         while(true){
             System.out.println("Press '1' to add contact");
@@ -26,10 +27,12 @@ public class Main {
                     break;
                 case 4: contactList1.remove();
                     break;
-                case 5: contactList1.printall();
-                    break;
+    //            case 5: contactList1.printall();
+     //               break;
                 case 6: System.out.println("Thank you and Goodbye");
                     System.exit(0);
+                default:
+                    System.out.println("Enter valid command");
             }
         }
     }
