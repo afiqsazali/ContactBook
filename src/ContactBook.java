@@ -28,7 +28,7 @@ public class ContactBook {
 
 				contactList.insert(person);
 
-				System.out.println("Contact " + Name + " Added succesfully!");
+				System.out.println("\nContact " + Name + " Added succesfully!");
 
 		}
 
@@ -53,7 +53,7 @@ public class ContactBook {
 
 				try {
 					if (name.equals(current.contact.name)) {
-					System.out.println("\nName '"+ current.contact.name +"' is inside contact list");
+					System.out.println("\nName '"+ current.contact.name +"' is in the contact list");
 					System.out.println("Email: "+ current.contact.email);
 					System.out.println("Phone Number: "+ current.contact.phoneNum);
 					System.out.println("Post Mail: "+ current.contact.posMail);
