@@ -85,7 +85,7 @@ public class ContactBook {
 						return;
 				}
 
-				while(current.next!=null && !name.equals(current.contact.name)) {
+				while(current.next!=null && name.equals(current.contact.name)==false) {
 					current=current.next;
 				}
 
@@ -137,7 +137,7 @@ public class ContactBook {
 
 		}
 
-	/*	public void printall(){
+	public void printall(){
 
 			Node current;
 			current = contactList.head;
@@ -145,9 +145,12 @@ public class ContactBook {
 				System.out.println("Error, no contact found.");
 				return;
 			}
-			while(current.next!=null && equals(current.contact.name)==false) {
+			while(current!=null) {
+
+				System.out.println(current.contact.name);
 				current=current.next;
+
 			}
-			System.out.println(contactList.toString());
-		}*/
+
+		}
 }
