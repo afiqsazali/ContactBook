@@ -28,7 +28,7 @@ public class ContactBook {
 
 				contactList.insert(person);
 
-				System.out.println("\nContact " + Name + " Added succesfully!");
+				System.out.println("\nContact " + Name + " Added succesfully!\n");
 
 		}
 
@@ -112,6 +112,7 @@ public class ContactBook {
 				current=current.next;
 				}
 
+				System.out.println("\nName '"+ current.contact.name +"' is in the contact list");
 				System.out.print("what would you like to edit?\n(1)-Name \n(2)-Email \n(3)-Phone Number \n(4)-Postal Address \nEnter a number: ");
 				Scanner opt = new Scanner(System.in);
 				int option = opt.nextInt();
@@ -147,8 +148,10 @@ public class ContactBook {
 			}
 			while(current!=null) {
 
-				System.out.println(current.contact.name);
-				current=current.next;
+//				System.out.println(current.contact.name);
+					System.out.format("%32s%20s%15s%40s", current.contact.name, current.contact.email, current.contact.phoneNum, current.contact.posMail);
+					System.out.println("\n");
+					current=current.next;
 
 			}
 
