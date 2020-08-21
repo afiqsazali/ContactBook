@@ -24,8 +24,6 @@ public class LinkedList {
 
 		void remove(Contact contact1) {
 
-
-
 				// If linked list is empty
 				if (head == null)
 					return;
