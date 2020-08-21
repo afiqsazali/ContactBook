@@ -146,10 +146,13 @@ public class ContactBook {
 				System.out.println("Error, no contact found.");
 				return;
 			}
+
+			System.out.format("%-20s%-30s%-15s%-40s", "Name", "Email", "Phone Number", "Postal Address");
+			System.out.println("\n");
 			while(current!=null) {
 
 //				System.out.println(current.contact.name);
-					System.out.format("%32s%20s%15s%40s", current.contact.name, current.contact.email, current.contact.phoneNum, current.contact.posMail);
+					System.out.format("%-15s%-30s%-15s%-40s", current.contact.name, current.contact.email, current.contact.phoneNum, current.contact.posMail);
 					System.out.println("\n");
 					current=current.next;
 
