@@ -18,14 +18,33 @@ public class Main {
             System.out.print("Enter a number: ");
             int choice = scan.nextInt();
 
+            Scanner input = new Scanner(System.in);
             switch(choice){
-                case 1: contactList1.add();
+                case 1:
+                    System.out.print("Enter a name: ");
+                    String name = input.nextLine();
+                    System.out.print("Enter an email: ");
+                    String email = input.nextLine();
+                    System.out.print("Enter Phone Number: ");
+                    String phoneNum = input.nextLine();
+                    System.out.print("Enter Postal Address: ");
+                    String posMail = input.nextLine();
+                    contactList1.add(name,email,phoneNum,posMail);
                     break;
-                case 2: contactList1.search();
+                case 2:
+                    System.out.print("Enter a name to be searched: ");
+                    String srchName = input.nextLine();
+                    contactList1.search(srchName);
                     break;
-                case 3: contactList1.edit();
+                case 3:
+                    System.out.print("Enter a name to be edited: ");
+                    String editName = input.nextLine();
+                    contactList1.edit(editName);
                     break;
-                case 4: contactList1.remove();
+                case 4:
+                    System.out.print("Enter a name to be removed: ");
+                    String removeName = input.nextLine();
+                    contactList1.remove(removeName);
                     break;
               case 5: contactList1.printall();
               break;

@@ -7,23 +7,15 @@ public class ContactBook {
 
 		Scanner input = new Scanner(System.in);
 
-		public void add() {
+		public void add(String Name, String email, String phoneNum, String PosMail) {
 
 				Contact person = new Contact();
-				System.out.print("Please enter a name to be added: ");
-				String Name = input.nextLine();
 				person.setName(Name);
 
-				System.out.print("\nPlease enter an email to be added: ");
-				String email = input.nextLine();
 				person.setEmail(email);
 
-				System.out.print("\nPlease enter a phone number to be added: ");
-				String phoneNum = input.nextLine();
 				person.setphoneNum(phoneNum);
 
-				System.out.print("\nPlease enter a post code to be added: ");
-				String PosMail = input.nextLine();
 				person.setPosMail(PosMail);
 
 				contactList.insert(person);
@@ -32,14 +24,12 @@ public class ContactBook {
 
 		}
 
-		public void search() {
+		public void search(String newName) {
 
 				Node current;
-				System.out.print("\nPlease enter a name to be searched in the contact book: ");
 
 				current = contactList.head;
 
-				String newName = input.nextLine();
 				String name = newName;
 
 				if (contactList.head == null) {
@@ -71,14 +61,11 @@ public class ContactBook {
 
 		}
 
-		public void remove() {
+		public void remove(String name) {
 
 				Node current;
-				System.out.println("Please enter a name to be removed: ");
 
 				current = contactList.head;
-
-				String name = input.nextLine();
 
 				if (contactList.head == null) {
 						System.out.println("Error, no contact found.");
@@ -93,14 +80,12 @@ public class ContactBook {
 				System.out.println("Contact '"+ name +"' has been removed successfully. ");
 		}
 
-		public void edit() {
+		public void edit(String newName) {
 
 				Node current;
-				System.out.print("\nPlease enter a name to be edited: ");
 
 				current = contactList.head;
 
-				String newName = input.nextLine();
 				String name = newName;
 
 				if (contactList.head == null) {
