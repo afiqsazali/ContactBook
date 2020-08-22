@@ -10,12 +10,10 @@ public class ContactBook {
 		public void add(String Name, String email, String phoneNum, String PosMail) {
 
 				Contact person = new Contact();
+
 				person.setName(Name);
-
 				person.setEmail(email);
-
 				person.setphoneNum(phoneNum);
-
 				person.setPosMail(PosMail);
 
 				contactList.insert(person);
@@ -27,9 +25,7 @@ public class ContactBook {
 		public void search(String newName) {
 
 				Node current;
-
 				current = contactList.head;
-
 				String name = newName;
 
 				if (contactList.head == null) {
@@ -64,7 +60,6 @@ public class ContactBook {
 		public void remove(String name) {
 
 				Node current;
-
 				current = contactList.head;
 
 				if (contactList.head == null) {
@@ -83,9 +78,7 @@ public class ContactBook {
 		public void edit(String newName) {
 
 				Node current;
-
 				current = contactList.head;
-
 				String name = newName;
 
 				if (contactList.head == null) {

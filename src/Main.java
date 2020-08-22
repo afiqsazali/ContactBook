@@ -9,6 +9,7 @@ public class Main {
         System.out.println("CONTACT BOOK");
 
         while(true){
+
             System.out.println("Press '1' to add contact");
             System.out.println("Press '2' to search contact");
             System.out.println("Press '3' to edit contact");
@@ -19,6 +20,7 @@ public class Main {
             int choice = scan.nextInt();
 
             Scanner input = new Scanner(System.in);
+
             switch(choice){
                 case 1:
                     System.out.print("Enter a name: ");
@@ -46,13 +48,16 @@ public class Main {
                     String removeName = input.nextLine();
                     contactList1.remove(removeName);
                     break;
-              case 5: contactList1.printall();
-              break;
-                case 6: System.out.println("Thank you and Goodbye");
+                case 5:
+                    contactList1.printall();
+                    break;
+                case 6:
+                    System.out.println("Thank you and Goodbye");
                     System.exit(0);
                 default:
                     System.out.println("Enter valid command");
             }
+
         }
     }
 }
